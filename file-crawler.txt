@@ -1,0 +1,19 @@
+Firstly we need to look at the inspection mode and there we see that file is located in
+ 
+It tells us about LFI vulnerability (local file inclusion) in the ‘image_name’ part
+So now we should to get back to the source file
+ 
+ 
+As we can see there is a block for this vulnerability and to overcome it we can use ‘//’ instead of ‘/’ as the block is on char symbols
+ 
+As a result we got this
+ 
+ and by this we understand that there is an FLI vulnerability
+So now lets try to find our flag by using hint location (temporary (tmp))
+ 
+And here it is
+ 
+
+image_name=..//..//..//etc/passwd
+
+image_name=..//tmp/flag

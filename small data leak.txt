@@ -1,0 +1,13 @@
+Our hint is /user?id=
+So as soon as we register we can input this line in the end of our link
+ 
+As the result we are getting sqlalchemy.exc.DataError
+As we can see it’s a python library – so we can use sqlmap in linux to get needed information
+ 
+As soon as we find an injection point we need to find all databases and for that we need to use –dbs
+ 
+Now we need to see whats inside it in tables (--tables)
+ 
+We already got the first part of answer, and now we should use -T … --columns
+ 
+Here is the second part
