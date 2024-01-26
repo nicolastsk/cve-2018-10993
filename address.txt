@@ -1,0 +1,8 @@
+roca websitze shevalt source codshi  iqneba /admin.php mwvaned
+mivuwert https://url/admin.php
+mere gadavkopirebt mtlianad da gavaketebt curl commands
+ambobs rom mxolod local userebs sheudzliat naxva
+amitom chven unda movatyuot da gavaketot spoofing X-forward-for header -is gamoyenebit
+
+curl -XGET http:// url /admin.php -H 'X-Forwarded-For: 127.0.0.1'
+sadac -H headeria
