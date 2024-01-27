@@ -1,0 +1,1 @@
+-cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec="ls -lah"
